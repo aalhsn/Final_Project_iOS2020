@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,13 @@
 		949FD40523EEF1BB00B16A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949FD40423EEF1BB00B16A16 /* Assets.xcassets */; };
 		949FD40823EEF1BB00B16A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949FD40623EEF1BB00B16A16 /* LaunchScreen.storyboard */; };
 		949FD41023EF034100B16A16 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949FD40F23EF034100B16A16 /* Teacher.storyboard */; };
+		9F81B3D623EF12040005EC54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B3D523EF12040005EC54 /* GoogleService-Info.plist */; };
+		9F81B3D823EF145F0005EC54 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81B3D723EF145F0005EC54 /* Networking.swift */; };
+		D97B97935B61E53FFFCB17F9 /* Pods_omsi_board.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1861E6DA68E99C1B6D3DE35 /* Pods_omsi_board.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81B3C14043951B91F069BEBE /* Pods-omsi_board.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omsi_board.release.xcconfig"; path = "Target Support Files/Pods-omsi_board/Pods-omsi_board.release.xcconfig"; sourceTree = "<group>"; };
 		949FD3F823EEF1B900B16A16 /* omsi_board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = omsi_board.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949FD3FB23EEF1B900B16A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		949FD3FD23EEF1B900B16A16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		949FD40723EEF1BB00B16A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		949FD40923EEF1BB00B16A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		949FD40F23EF034100B16A16 /* Teacher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
+		9F81B3D523EF12040005EC54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F81B3D723EF145F0005EC54 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D425EE9AE0CCBCA122ABFE53 /* Pods-omsi_board.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omsi_board.debug.xcconfig"; path = "Target Support Files/Pods-omsi_board/Pods-omsi_board.debug.xcconfig"; sourceTree = "<group>"; };
+		E1861E6DA68E99C1B6D3DE35 /* Pods_omsi_board.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_omsi_board.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97B97935B61E53FFFCB17F9 /* Pods_omsi_board.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87194C55871672234EAFEB6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1861E6DA68E99C1B6D3DE35 /* Pods_omsi_board.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		949FD3EF23EEF1B900B16A16 = {
 			isa = PBXGroup;
 			children = (
 				949FD3FA23EEF1B900B16A16 /* omsi_board */,
 				949FD3F923EEF1B900B16A16 /* Products */,
+				E8CE0E8ACD3D7892DFEE447A /* Pods */,
+				87194C55871672234EAFEB6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +77,9 @@
 		949FD3FA23EEF1B900B16A16 /* omsi_board */ = {
 			isa = PBXGroup;
 			children = (
+				9F81B3D523EF12040005EC54 /* GoogleService-Info.plist */,
 				949FD3FB23EEF1B900B16A16 /* AppDelegate.swift */,
+				9F81B3D723EF145F0005EC54 /* Networking.swift */,
 				949FD3FD23EEF1B900B16A16 /* SceneDelegate.swift */,
 				949FD3FF23EEF1B900B16A16 /* ViewController.swift */,
 				949FD40123EEF1B900B16A16 /* Main.storyboard */,
@@ -70,6 +91,15 @@
 			path = omsi_board;
 			sourceTree = "<group>";
 		};
+		E8CE0E8ACD3D7892DFEE447A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D425EE9AE0CCBCA122ABFE53 /* Pods-omsi_board.debug.xcconfig */,
+				81B3C14043951B91F069BEBE /* Pods-omsi_board.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 949FD40C23EEF1BB00B16A16 /* Build configuration list for PBXNativeTarget "omsi_board" */;
 			buildPhases = (
+				AC2E9D7491955283CCC4503E /* [CP] Check Pods Manifest.lock */,
 				949FD3F423EEF1B900B16A16 /* Sources */,
 				949FD3F523EEF1B900B16A16 /* Frameworks */,
 				949FD3F623EEF1B900B16A16 /* Resources */,
+				6DFCD8CDB60315ACFDE4FF4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,10 +164,53 @@
 				949FD41023EF034100B16A16 /* Teacher.storyboard in Resources */,
 				949FD40523EEF1BB00B16A16 /* Assets.xcassets in Resources */,
 				949FD40323EEF1B900B16A16 /* Main.storyboard in Resources */,
+				9F81B3D623EF12040005EC54 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DFCD8CDB60315ACFDE4FF4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-omsi_board/Pods-omsi_board-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-omsi_board/Pods-omsi_board-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-omsi_board/Pods-omsi_board-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2E9D7491955283CCC4503E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-omsi_board-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		949FD3F423EEF1B900B16A16 /* Sources */ = {
@@ -145,6 +220,7 @@
 				949FD40023EEF1B900B16A16 /* ViewController.swift in Sources */,
 				949FD3FC23EEF1B900B16A16 /* AppDelegate.swift in Sources */,
 				949FD3FE23EEF1B900B16A16 /* SceneDelegate.swift in Sources */,
+				9F81B3D823EF145F0005EC54 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,9 +362,11 @@
 		};
 		949FD40D23EEF1BB00B16A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D425EE9AE0CCBCA122ABFE53 /* Pods-omsi_board.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3E6A4HYS7;
 				INFOPLIST_FILE = omsi_board/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,9 +381,11 @@
 		};
 		949FD40E23EEF1BB00B16A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B3C14043951B91F069BEBE /* Pods-omsi_board.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J3E6A4HYS7;
 				INFOPLIST_FILE = omsi_board/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

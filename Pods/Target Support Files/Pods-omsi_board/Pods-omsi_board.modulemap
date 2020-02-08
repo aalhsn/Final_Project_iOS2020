@@ -1,0 +1,6 @@
+framework module Pods_omsi_board {
+  umbrella header "Pods-omsi_board-umbrella.h"
+
+  export *
+  module * { export * }
+}
