@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2CP-dc-38l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2CP-dc-38l">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -89,12 +89,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IqR-uw-ALk">
-                                <rect key="frame" x="96" y="306" width="223" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KwN-ke-dMO">
                                 <rect key="frame" x="96" y="366" width="223" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -131,6 +125,12 @@
                                     <segue destination="IwR-Bq-cL9" kind="presentation" modalPresentationStyle="fullScreen" id="5L3-J4-jfh"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IqR-uw-ALk">
+                                <rect key="frame" x="96" y="306" width="223" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mpB-AQ-3y8"/>
@@ -143,7 +143,6 @@
         <!--View Controller-->
         <scene sceneID="Wg5-Tq-cEs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BVo-ez-r4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="j74-T0-U5J" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hKH-5j-2ou">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -171,6 +170,7 @@
                         <viewLayoutGuide key="safeArea" id="MVh-F2-5ot"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVo-ez-r4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2635" y="-545"/>
         </scene>
@@ -392,10 +392,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Teacher Sign UpVC View Controller-->
         <scene sceneID="FEP-i9-v4p">
             <objects>
-                <viewController id="mSq-KI-zsb" sceneMemberID="viewController">
+                <viewController id="mSq-KI-zsb" customClass="TeacherSignUpVCViewController" customModule="omsi_board" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="10c-75-nVG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,6 +427,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="firstNameField:" destination="9Ad-nY-nPo" eventType="editingDidEnd" id="tL0-h3-bFi"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yoi-Ph-0Se">
                                 <rect key="frame" x="96" y="287" width="222.99999999999991" height="34.000000000000227"/>
@@ -462,8 +465,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="V4v-3f-Zxd"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="vK6-ai-7lv" id="QRs-RS-WDR"/>
+                        <outlet property="firstNameField" destination="Ksy-GP-2H6" id="9Ie-U8-2KX"/>
+                        <outlet property="lastNameField" destination="Yoi-Ph-0Se" id="yj8-yL-Yng"/>
+                        <outlet property="passwordField" destination="Ykx-wj-I1T" id="2U6-ap-fn2"/>
+                        <outlet property="teacherIDField" destination="gSI-SU-R9Q" id="vHq-FN-KYG"/>
+                        <outlet property="usernameField" destination="unA-Nt-KcI" id="ZcK-UJ-How"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ptr-P3-f0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9Ad-nY-nPo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1048" y="796"/>
         </scene>
