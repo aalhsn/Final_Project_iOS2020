@@ -13,6 +13,7 @@
 		949FD40323EEF1B900B16A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949FD40123EEF1B900B16A16 /* Main.storyboard */; };
 		949FD40523EEF1BB00B16A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949FD40423EEF1BB00B16A16 /* Assets.xcassets */; };
 		949FD40823EEF1BB00B16A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949FD40623EEF1BB00B16A16 /* LaunchScreen.storyboard */; };
+		949FD41023EF034100B16A16 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949FD40F23EF034100B16A16 /* Teacher.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		949FD40423EEF1BB00B16A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		949FD40723EEF1BB00B16A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		949FD40923EEF1BB00B16A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		949FD40F23EF034100B16A16 /* Teacher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				949FD3FD23EEF1B900B16A16 /* SceneDelegate.swift */,
 				949FD3FF23EEF1B900B16A16 /* ViewController.swift */,
 				949FD40123EEF1B900B16A16 /* Main.storyboard */,
+				949FD40F23EF034100B16A16 /* Teacher.storyboard */,
 				949FD40423EEF1BB00B16A16 /* Assets.xcassets */,
 				949FD40623EEF1BB00B16A16 /* LaunchScreen.storyboard */,
 				949FD40923EEF1BB00B16A16 /* Info.plist */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				949FD40823EEF1BB00B16A16 /* LaunchScreen.storyboard in Resources */,
+				949FD41023EF034100B16A16 /* Teacher.storyboard in Resources */,
 				949FD40523EEF1BB00B16A16 /* Assets.xcassets in Resources */,
 				949FD40323EEF1B900B16A16 /* Main.storyboard in Resources */,
 			);
@@ -293,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aalhsn.omsi-board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aalhsn.omsi-board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
