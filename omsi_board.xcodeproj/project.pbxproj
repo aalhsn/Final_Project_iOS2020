@@ -17,6 +17,7 @@
 		9F81B3D623EF12040005EC54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F81B3D523EF12040005EC54 /* GoogleService-Info.plist */; };
 		9F81B3D823EF145F0005EC54 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F81B3D723EF145F0005EC54 /* Networking.swift */; };
 		D97B97935B61E53FFFCB17F9 /* Pods_omsi_board.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1861E6DA68E99C1B6D3DE35 /* Pods_omsi_board.framework */; };
+		D9C57C2D23EF1275005270FB /* TeacherSignUpVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C57C2C23EF1275005270FB /* TeacherSignUpVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +31,14 @@
 		949FD40723EEF1BB00B16A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		949FD40923EEF1BB00B16A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		949FD40F23EF034100B16A16 /* Teacher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Teacher.storyboard; sourceTree = "<group>"; };
+
 		9F81B3D523EF12040005EC54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F81B3D723EF145F0005EC54 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		D425EE9AE0CCBCA122ABFE53 /* Pods-omsi_board.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-omsi_board.debug.xcconfig"; path = "Target Support Files/Pods-omsi_board/Pods-omsi_board.debug.xcconfig"; sourceTree = "<group>"; };
 		E1861E6DA68E99C1B6D3DE35 /* Pods_omsi_board.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_omsi_board.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		D9C57C2C23EF1275005270FB /* TeacherSignUpVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherSignUpVCViewController.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,7 @@
 				949FD3FD23EEF1B900B16A16 /* SceneDelegate.swift */,
 				949FD3FF23EEF1B900B16A16 /* ViewController.swift */,
 				949FD40123EEF1B900B16A16 /* Main.storyboard */,
+				D9C57C2C23EF1275005270FB /* TeacherSignUpVCViewController.swift */,
 				949FD40F23EF034100B16A16 /* Teacher.storyboard */,
 				949FD40423EEF1BB00B16A16 /* Assets.xcassets */,
 				949FD40623EEF1BB00B16A16 /* LaunchScreen.storyboard */,
@@ -217,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C57C2D23EF1275005270FB /* TeacherSignUpVCViewController.swift in Sources */,
 				949FD40023EEF1B900B16A16 /* ViewController.swift in Sources */,
 				949FD3FC23EEF1B900B16A16 /* AppDelegate.swift in Sources */,
 				949FD3FE23EEF1B900B16A16 /* SceneDelegate.swift in Sources */,
